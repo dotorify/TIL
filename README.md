@@ -21,7 +21,10 @@
 
 ** gollum은 루비에 의존성을 가지고 있기때문에 사전에 설치되어있어야한다. 위의 공식 설치가이드를 확인해서 OS별 설치법을 확인하도록 한다.
 ```bash
-$ sudo gem install gollumn
+# 의존성 설치
+$ sudo brew install icu4c
+# gollum 설치
+$ sudo gem install gollum
 ```
 
 ** 주의. OSX el Capitan 사용자
