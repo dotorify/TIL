@@ -1,0 +1,30 @@
+.box1, .box2, .box3, .box4 {
+  height: 50px;
+  /*
+   * block 속성을 가지는 div는 너비와 높이를 지정할 수 있다.
+   */
+}
+
+.boxA, .box1, .box4 {
+  border: 1px solid red;
+}
+
+.boxA:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.box2 {
+  float: left;
+  /*
+   * 자식요소가 float속성을 사용해서 떠있는 상태가 되면
+   * 부모의 높이는 0이된다.
+   */
+  width: 50%;
+}
+
+.box3 {
+  float: left;
+  width: 50%;
+}
