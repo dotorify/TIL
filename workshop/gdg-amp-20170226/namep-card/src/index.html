@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html amp lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>AMP Namp Card</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="https://dotorify-namp-card.firebaseapp.com" />
+    <link rel="manifest" href="manifest.json">
+    <!-- ld+json 영역은 AMP에서 필수영역은 아닙니다 -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "gender": "XYX",
+            "jobTitle": "Student"
+        }
+    </script>
+    <!-- AMP 실행시 기본으로 필요한 CSS입니다 -->
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <!-- AMP JS 라이브러리 -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+</head>
+<body>
+    <h1>AMP Page - Name Card</h1>
+    <div class="card">
+        <h1>Dongwon</h1>
+        <!--AMP 이미지 사용-->
+        <amp-img src="profile.png" alt="My Profile" width="640" height="640" layout="responsive"></amp-img>
+        <!--자신의 개인정보 입렵-->
+        <dl>
+            <dt>Name:</dt>
+            <dd>Dongwon</dd>
+            <dt>Email:</dt>
+            <dd>dotorify@gmail.com</dd>
+            <dt>Facebook:</dt>
+            <dd>dotorify</dd>
+        </dl>
+    </div>
+
+    <amp-install-serviceworker src="sw.js" layout="nodisplay"></amp-install-serviceworker>
+</body>
+</html>
