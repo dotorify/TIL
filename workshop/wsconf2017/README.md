@@ -86,7 +86,15 @@
     }
     ```
 - em, rem 사용하지 않아도 된다.
-- 가변박스 height:0, padding-bottom: 50%
+- 가변박스
+    ```css
+    .box {
+      /*...*/
+      height: 0;
+      padding-bottom: 50%;
+      /*...*/
+    }
+    ```
 - 단어단위 한글 개행
     ```css
     /**/ {
@@ -101,8 +109,36 @@ Tip
 - iOS에서 (scroll snap point)[http://caniuse.com/#search=scroll%20snap%20points] css속성 사용을 통해서 carousel snap처리가 가능하다. (안드로이드 사용 불가)
 
 
-
 ## 9. BEM, Sass와 함께 한 11번가 UI 컴포넌트 제작기
+
+컴포넌트
+1. 클래스 네이밍 규칙
+2. 실무적 이슈 및 특성 반영
+    - 영역 좌우 간격, 타이틀 정렬 위치, 배경 유무
+3. 실무에서 발생하는 협업 이슈 고려
+    - 동일한 스타일의 중복
+    - 작업자 별 네이밍 방식 차이
+    - 통일되지 않은 클래스 지정 위치
+4. 네이밍은 서비스가 아닌 컴포넌트의 형태/용도에 맞게
+5. 컴포넌트 별로 개별 sass파일 분리
+
+
+BEM
+> BEM: Block__Element--Modifier
+
+적용 고려사항
+1. 컴포넌트 별로 모듈화
+2. 클래스명만 보더라도 다른 작업자가 이해할 수 있도록
+3. ...
+
+커스터마이징
+- 요소 구분을 위해 prefix 적용 (e.g. layout: l-grid => 그리드 레이아웃)
+
+Past Process
+- Powerpoint -> Photoshop -> sublimetext
+
+Present Process
+- JIRA -> Sketch -> Invision -> sublimetext
 
 ## 10. UI개발 Tip&Tech Top 10
 
