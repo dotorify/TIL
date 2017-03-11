@@ -142,6 +142,54 @@ Present Process
 
 ## 10. UI개발 Tip&Tech Top 10
 
+Chrome DevTool
+1. Network
+    - Capture
+    - throttling the Network (네트워크 속도 느리게 할 수 있는 기능)
+
+2. Filter
+
+3. Soruce
+    - minifiy 된 코드를 formatting 할 수 있다.
+    - sourceMap
+
+4. Search
+    - 로딩 된 파일 또는 메서드 검색 가능하다.
+
+5. Animation
+    - 미리보기가 가능하다.
+    - 애니메이션 도구 [ceaser](https://matthewlein.com/ceaser/)
+
+
+IDE ATOM, SublimeText
+
+1. Emmet 활용
+    - HTML 기본 구조 생성하는 IDE플러그인
+
+2. CDN 활용
+    - 주소를 그대로 사용해도 되지만 `cdnjs` 플러그인 사용하면 IDE에서 더 편리하게 작업 가능하다.
+
+3. Autoprefixer 활용
+    - Vendor prefix 자동으로 입력하는 IDE 플러그인
+
+4. LiveReload 활용
+    - sass와 같이 사용가능하다.
+    - [for ATOM](https://atom.io/packages/livereload)
+
+5. Server
+    - [for ATOM](https://atom.io/packages/atom-live-server)
+
+ETC
+
+1. Fiddler
+    - Debugging, Performance Test.. Chrome DevTool같은 기능
+    - 바꾸고 싶은 파일만 바꿔볼 수 있는 기능 (e.g. 라이브 서비스에서 특정 파일을 deploy되지 않은 파일로 대체)
+    - Mobile 웹 및 웹뷰 디버깅이 가능하다.
+
+2. CSS Sprites 자동화
+    - Gulp, Grunt, Webpack ...
+    - [for Webpack](https://www.npmjs.com/package/webpack-spritesmith)
+
 ## Reference
 
 - WAI-ARIA
